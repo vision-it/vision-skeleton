@@ -1,0 +1,8 @@
+---
+fixtures:
+  repositories:
+    stdlib:
+      repo: "https://github.com/puppetlabs/puppetlabs-stdlib"
+      ref: "4.12.0"
+  symlinks:
+    vision_skeleton: '#{source_dir}'
