@@ -1,11 +1,11 @@
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
-puppetversion = ENV.key?('PUPPET_VERSION') ? ENV['PUPPET_VERSION'] : ['4.6.1']
+puppetversion = ENV.key?('PUPPET_VERSION') ? ENV['PUPPET_VERSION'] : ['5.0.1']
 gem 'puppet', puppetversion
 
-gem 'rake', '11.3.0'
-gem 'rspec-puppet', '2.5.0'
-gem 'puppetlabs_spec_helper', '1.2.2'
+gem 'puppetlabs_spec_helper', '2.3.1'
+gem 'rake', '12.0.0'
+gem 'rspec-puppet', '2.6.7'
 
 group :rubocop do
   gem 'rubocop', '0.47.0'
@@ -13,21 +13,17 @@ group :rubocop do
 end
 
 group :testing do
-  gem 'metadata-json-lint', '1.1.0'
-  gem 'rspec-puppet-facts', '1.7.1'
+  gem 'metadata-json-lint', '1.2.2'
+  gem 'rspec-puppet-facts', '1.8.0'
 end
 
 group :acceptance do
   gem 'beaker-rspec', '6.1.0'
-  gem 'serverspec', '2.38.0'
-  gem 'specinfra', '2.67.9'
-  gem 'fog-core', '1.43.0' # https://github.com/fog/fog-core/issues/206
+  gem 'serverspec', '2.40.0'
+  gem 'specinfra', '2.70.1'
 end
 
 group :development do
-  gem 'travis',           :require => false
-  gem 'travis-lint',      :require => false
-  gem 'rbnacl',           :require => false
-  gem 'rbnacl-libsodium', :require => false
-  gem 'bcrypt_pbkdf',     :require => false
+  gem 'travis',      :require => false
+  gem 'travis-lint', :require => false
 end
