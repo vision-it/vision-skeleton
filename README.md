@@ -18,7 +18,7 @@
 Include in the *Puppetfile*:
 
 ```
-mod vision_skeleton:
+mod 'vision_skeleton',
     :git => 'https://github.com/vision-it/vision-skeleton.git,
     :ref => 'production'
 ```
