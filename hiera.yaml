@@ -1,3 +1,4 @@
+# Hiera config for module, so that data/common.yaml can be used for defaults
 ---
 version: 5
 defaults:
