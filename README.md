@@ -1,6 +1,6 @@
 # vision-skeleton
 
-[![Build Status](https://travis-ci.org/vision-it/vision-skeleton.svg?branch=development)](https://travis-ci.org/vision-it/vision-skeleton)
+[![Build Status](https://travis-ci.com/vision-it/vision-skeleton.svg?branch=development)](https://travis-ci.com/vision-it/vision-skeleton)
 
 ## Parameter
 
